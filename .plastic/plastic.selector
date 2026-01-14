@@ -1,0 +1,4 @@
+repository "Demining Academy/Demining Academy@7971764444723@cloud"
+  path "/"
+    br "/main"
+    co "/main"

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2ddd7ef3c4913db4d8107e9a6259d5a8
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320654
+  packageName: LPEnviroment - Optimized Tree Shaders
+  packageVersion: 1.0.3
+  assetPath: Assets/LPEnviroment/performance.txt
+  uploadId: 762655

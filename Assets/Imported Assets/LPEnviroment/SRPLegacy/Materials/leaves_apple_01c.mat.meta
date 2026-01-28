@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c0eec0b97dbcff141b2b72c3f22750fb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320654
+  packageName: LPEnviroment - Optimized Tree Shaders
+  packageVersion: 1.0.3
+  assetPath: Assets/LPEnviroment/SRPLegacy/Materials/leaves_apple_01c.mat
+  uploadId: 762655

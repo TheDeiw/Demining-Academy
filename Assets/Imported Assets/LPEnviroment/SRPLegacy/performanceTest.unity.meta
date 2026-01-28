@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8d86a2d445de3274e973ad8ffa92f733
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320654
+  packageName: LPEnviroment - Optimized Tree Shaders
+  packageVersion: 1.0.3
+  assetPath: Assets/LPEnviroment/SRPLegacy/performanceTest.unity
+  uploadId: 762655

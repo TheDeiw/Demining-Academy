@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ac52ae875fe1b5043a7d2152621a17d8
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320654
+  packageName: LPEnviroment - Optimized Tree Shaders
+  packageVersion: 1.0.3
+  assetPath: Assets/LPEnviroment/Shaders/SRPStdOverride.cginc
+  uploadId: 762655

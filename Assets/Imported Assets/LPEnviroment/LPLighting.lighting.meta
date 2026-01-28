@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a63b7c2dda90dda488863a038d99326a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320654
+  packageName: LPEnviroment - Optimized Tree Shaders
+  packageVersion: 1.0.3
+  assetPath: Assets/LPEnviroment/LPLighting.lighting
+  uploadId: 762655

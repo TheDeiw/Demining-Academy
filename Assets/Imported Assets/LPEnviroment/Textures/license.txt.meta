@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2e936257afaa7f7409c1b4eba071d349
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320654
+  packageName: LPEnviroment - Optimized Tree Shaders
+  packageVersion: 1.0.3
+  assetPath: Assets/LPEnviroment/Textures/license.txt
+  uploadId: 762655

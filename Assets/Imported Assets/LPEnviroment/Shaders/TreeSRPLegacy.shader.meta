@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f3b29f46f76c88746ad4a25541746481
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320654
+  packageName: LPEnviroment - Optimized Tree Shaders
+  packageVersion: 1.0.3
+  assetPath: Assets/LPEnviroment/Shaders/TreeSRPLegacy.shader
+  uploadId: 762655

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 921b239eff63add419ffa7c0ce71ecb3
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320654
+  packageName: LPEnviroment - Optimized Tree Shaders
+  packageVersion: 1.0.3
+  assetPath: Assets/LPEnviroment/Shaders/TreeURP.shader
+  uploadId: 762655

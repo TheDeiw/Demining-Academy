@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d11d9e6ce73948f4ea2cb370de63fe85
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320654
+  packageName: LPEnviroment - Optimized Tree Shaders
+  packageVersion: 1.0.3
+  assetPath: Assets/LPEnviroment/Shaders/TreeBase.cginc
+  uploadId: 762655

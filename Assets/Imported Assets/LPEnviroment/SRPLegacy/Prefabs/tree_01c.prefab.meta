@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e99ef120de4717b4d983f1bda2527722
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320654
+  packageName: LPEnviroment - Optimized Tree Shaders
+  packageVersion: 1.0.3
+  assetPath: Assets/LPEnviroment/SRPLegacy/Prefabs/tree_01c.prefab
+  uploadId: 762655

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3f3d22c0735e97142bb4ab15cf1c90a2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320654
+  packageName: LPEnviroment - Optimized Tree Shaders
+  packageVersion: 1.0.3
+  assetPath: Assets/LPEnviroment/SRPLegacy/Materials/bark_apple_01a.mat
+  uploadId: 762655

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a8e721f7ce2a6a44889b3063115424af
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320654
+  packageName: LPEnviroment - Optimized Tree Shaders
+  packageVersion: 1.0.3
+  assetPath: Assets/LPEnviroment/Shaders/URPStdOverride.hlsl
+  uploadId: 762655

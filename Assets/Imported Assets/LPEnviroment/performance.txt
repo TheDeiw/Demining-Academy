@@ -1,0 +1,13 @@
+							Wind magnitude and turbulence = 1				Wind magnitude and turbulence = 0
+Shader	Model		NTrees	Screen		Min [ms]	Mod [ms]	Max [ms]	min [ms]	mod [ms]	max [ms]
+SRPL	tree_01		128		1637x921	1.0			1.2			2.0
+SRP		tree_01		128		1637x921	1.0			1.2			1.8
+URP		tree_01		128		1611x906	2.2			2.3			3.2
+HDRP	tree_01		128		1611x906	6.3			7.3			10.2
+SRPL	tree_03b	128		1611x906	1.2/3.2		1.2/3.3		1.6/4.2		1.1/3.2		1.1/3.2		1.4/3.6
+SRP		tree_03b	128		1611x906	1.1/3.3		1.2/3.4		1.5/4.2		1.1/3.2		1.1/3.3		1.4/4.2
+URP		tree_03b	128		1611x906	1.8/4.0		1.9/4.0		3.2/5.3		1.7/3.9		1.7/3.9		2.7/5.3
+HDRP	tree_03b	128		1611x906	6.9/11.0	7.1/11.3	7.6/15.0	6.9/9.3		7.0/9.5		8.0/11.7
+
+tree_01 3900 verts, 3430 tris
+tree_03b 4226 verts, 5996 tris

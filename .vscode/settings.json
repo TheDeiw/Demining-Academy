@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "Demining Academy.slnx"
+    "dotnet.defaultSolution": "Demining-Academy.slnx"
 }

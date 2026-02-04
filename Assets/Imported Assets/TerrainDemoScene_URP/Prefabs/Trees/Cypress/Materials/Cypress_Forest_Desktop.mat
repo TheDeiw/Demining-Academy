@@ -46,6 +46,8 @@ Material:
   - BACKFACE_NORMAL_MODE_MIRROR
   - _WINDQUALITY_PALM
   m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _EMISSION
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
@@ -198,3 +200,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 9
+  version: 10

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 9
+  version: 10
 --- !u!114 &-392403600241184842
 MonoBehaviour:
   m_ObjectHideFlags: 11

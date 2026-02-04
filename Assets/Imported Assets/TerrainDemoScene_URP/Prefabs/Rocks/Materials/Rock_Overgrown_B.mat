@@ -29,6 +29,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 9
+  version: 10
 --- !u!21 &2100000
 Material:
   serializedVersion: 8

@@ -2820,6 +2820,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5919648397580807480, guid: 43fc8139f33d4ff4c842012a7dc9fed4, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5919648397580807480, guid: 43fc8139f33d4ff4c842012a7dc9fed4, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.125
+      objectReference: {fileID: 0}
     - target: {fileID: 6235932216093163642, guid: 43fc8139f33d4ff4c842012a7dc9fed4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -16002,7 +16010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8656585643061938089, guid: 35e087cfaa0f57244b67615777188d3e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2139916
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8656585643061938089, guid: 35e087cfaa0f57244b67615777188d3e, type: 3}
       propertyPath: m_LocalPosition.z

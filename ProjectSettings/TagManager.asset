@@ -5,17 +5,18 @@ TagManager:
   serializedVersion: 3
   tags:
   - Mine
+  - Clipboard
   - Soil
   - PlayerTool
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - 
   - Water
   - UI
   - 
-  - Foliage
+  - 
   - 
   - 
   - 

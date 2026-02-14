@@ -12,7 +12,10 @@ public class MineDangerousHandling : MonoBehaviour
     [Header("Effects")]
     [Tooltip("Prefab for the explosion visual and sound effects.")]
     public GameObject explosionPrefab;
-
+    
+    [Header("Audio")]
+    public GameObject explosionSound;
+    
     private Rigidbody rb;
     private Vector3 lastVelocity;
     private bool isExploded = false;
@@ -57,6 +60,7 @@ public class MineDangerousHandling : MonoBehaviour
         // Spawn the explosion visual effect at the mine's current position
         if (explosionPrefab != null)
         {
+            Instantiate(explosionSound, transform.position, transform.rotation);
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         }
 

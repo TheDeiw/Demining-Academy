@@ -3,13 +3,13 @@ using UnityEngine;
 public class SoilRemoval : MonoBehaviour
 {
     [Header("效果设置")]
-    public GameObject dustParticlePrefab; // 泥土飞扬的粒子预制体
-    public float health = 100f;           // 土层的“生命值”
-    public float removalSpeed = 20f;      // 每次碰撞扣除的进度
+    public GameObject dustParticlePrefab; // Prefab for dust particles when soil is removed
+    public float health = 100f;           // Health of the soil layer, decreases as it's removed
+    public float removalSpeed = 20f;      // Speed at which soil is removed
 
     private void OnTriggerEnter(Collider other)
     {
-        // 检查碰撞物体是否为玩家的工具或手
+        // Check if the colliding object is the player's tool (you can tag it as "PlayerTool")
         if (other.CompareTag("PlayerTool"))
         {
             RemoveSoil();
@@ -20,20 +20,27 @@ public class SoilRemoval : MonoBehaviour
     {
         health -= removalSpeed;
 
-        // 1. 播放粒子效果（可选）
+        // Instantiate dust particles at the soil's position
         if (dustParticlePrefab != null)
         {
             Instantiate(dustParticlePrefab, transform.position, Quaternion.identity);
         }
 
-        // 2. 视觉反馈：可以让土层变小或者变透明
+        // Optionally, you can also scale down the soil object to visually represent the removal
         transform.localScale *= 0.8f;
 
-        // 3. 当“生命值”耗尽，土层消失
+        // Check if the soil layer is completely removed
         if (health <= 0)
         {
-            // 触发成功反馈，比如手柄震动
             Debug.Log("Cleaned!");
+
+            MineManager manager = Object.FindFirstObjectByType<MineManager>();
+            if (manager != null)
+            {
+                manager.OnMineCleared();
+            }
+
+
             Destroy(gameObject);
         }
     }

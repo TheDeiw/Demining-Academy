@@ -8,6 +8,8 @@ TagManager:
   - Clipboard
   - Soil
   - PlayerTool
+  - SurfaceSoil
+  - DeeperSoil
   layers:
   - Default
   - TransparentFX

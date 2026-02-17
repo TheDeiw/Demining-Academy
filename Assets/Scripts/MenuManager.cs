@@ -13,6 +13,11 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("level2");
     }
     
+    public void LoadLobby()
+    {
+        SceneManager.LoadScene("Scenes/Test Scenes/Kevin Tests/Lobby");
+    }
+    
     public void QuitGame()
     {
         Debug.Log("Closing game...");

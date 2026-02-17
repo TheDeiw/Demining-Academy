@@ -10,6 +10,7 @@ TagManager:
   - PlayerTool
   - SurfaceSoil
   - DeeperSoil
+  - TeleportablePlayer
   layers:
   - Default
   - TransparentFX

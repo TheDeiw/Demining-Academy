@@ -16,7 +16,7 @@ public class ShowMenu : MonoBehaviour
         {
             canvasMenu.SetActive(value: !canvasMenu.activeSelf);
 
-            canvasMenu.transform.position = player.position + new Vector3(player.forward.x, 0, player.forward.z).normalized*playerDistance;
+            //canvasMenu.transform.position = player.position + new Vector3(player.forward.x, 1, player.forward.z).normalized*playerDistance;
         }
         
         canvasMenu.transform.LookAt(worldPosition: new Vector3(player.position.x, canvasMenu.transform.position.y, player.position.z));

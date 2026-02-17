@@ -4032,6 +4032,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1932296933}
   - component: {fileID: 1932296932}
+  - component: {fileID: 1932296934}
   m_Layer: 0
   m_Name: XR Interaction Manager
   m_TagString: Untagged
@@ -4068,6 +4069,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1932296934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932296931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017c5e3933235514c9520e1dace2a4b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Inputs.InputActionManager
+  m_ActionAssets:
+  - {fileID: -944628639613478452, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
 --- !u!4 &1968566305 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3963802939909311771, guid: fabf8f0ecdee7c64897f6e8d835b0862, type: 3}

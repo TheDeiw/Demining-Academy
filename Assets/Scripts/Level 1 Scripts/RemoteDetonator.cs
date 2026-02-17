@@ -1,14 +1,15 @@
-﻿using UnityEngine;
+﻿using Level_1_Scripts;
+using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit; // Assuming you use XRIT
 
 public class RemoteDetonator : MonoBehaviour
 {
     public DisposalArea holeZone; 
-    private bool IsExplosionConnected;
+    private bool IsExplosionConnected = false;
     
-    [Header("Detonation Settings")]
-    public GameObject explosionPrefab;
-    public string mineTag = "Mine";
+    [SerializeField] private ExecuteFinish gameFinishHandler;
+        
+    private string mineTag = "Mine";
     
     public void TryDetonate()
     {
@@ -43,16 +44,23 @@ public class RemoteDetonator : MonoBehaviour
 
     private void ExecuteExplosion()
     {
-        foreach (GameObject mine in holeZone.minesInHole)
+        if (holeZone.AreAllMinesInHole())
         {
-            if (mine != null)
+            foreach (GameObject mine in holeZone.minesInHole)
             {
-                MineDangerousHandling mineHandler = mine.GetComponent<MineDangerousHandling>();
-                if (mineHandler != null)            
-                    mineHandler.Explode("Remote detonation triggered!");
+                if (mine != null)
+                {
+                    MineDangerousHandling mineHandler = mine.GetComponent<MineDangerousHandling>();
+                    if (mineHandler != null)            
+                        mineHandler.Explode("Remote detonation triggered!");
+                }
             }
+            gameFinishHandler.FinishGame(1);
+            Debug.Log("Road cleared successfully!");
         }
-        
-        Debug.Log("Road cleared successfully!");
+        else
+        {
+            Debug.Log("There are still mines outside the disposal pit! Detonation may not clear the road.");
+        }
     }
 }

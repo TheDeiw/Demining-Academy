@@ -1,4 +1,4 @@
-# DEMAMING ACADEMY: Mine Awareness & Demining Simulation
+# Mine Awareness & Demining Simulation
 
 **Virtual Reality Simulation for Mine Awareness and the Demining Process.**
 

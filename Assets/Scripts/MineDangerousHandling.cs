@@ -1,7 +1,11 @@
+using Level_1_Scripts;
 using UnityEngine;
 
 public class MineDangerousHandling : MonoBehaviour
 {
+    [Header("General Settings")]
+    [SerializeField] private ExecuteFinish gameFinishHandler;
+    
     [Header("Sensitivity Settings")]
     [Tooltip("The maximum impact force the mine can withstand before detonating.")]
     public float impactThreshold = 5f;
@@ -56,18 +60,23 @@ public class MineDangerousHandling : MonoBehaviour
     {
         isExploded = true;
         Debug.Log("MINE DETONATED: " + reason);
-
+        
         // Spawn the explosion visual effect at the mine's current position
         if (explosionPrefab != null)
         {
             Instantiate(explosionSound, transform.position, transform.rotation);
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         }
-
         // Logic for mission failure or game over
         // Example: FindObjectOfType<GameManager>().OnMineExploded();
 
         // Remove the mine object from the scene
         Destroy(gameObject);
+        
+        if (reason != "Win")
+        {
+            Debug.Log(reason);
+            gameFinishHandler.FinishGame(0);
+        }
     }
 }

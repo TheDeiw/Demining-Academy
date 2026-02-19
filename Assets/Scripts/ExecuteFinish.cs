@@ -7,6 +7,10 @@ namespace Level_1_Scripts
         [SerializeField] GameObject winCanvas;
         [SerializeField] GameObject loseCanvas;
         [SerializeField] GameObject player;
+        
+        [SerializeField] AudioSource welcomeAudio;
+        [SerializeField] AudioSource backgroundAudio;
+        [SerializeField] AudioSource loseAudio;
 
         void Start()
         {
@@ -19,6 +23,7 @@ namespace Level_1_Scripts
             if (result == 0)
             {
                 loseCanvas.SetActive(true);
+                loseAudio.Play();
             }
             else if (result == 1)
             {
@@ -27,6 +32,8 @@ namespace Level_1_Scripts
             var moveProvider = player.GetComponent<UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.ContinuousMoveProvider>();
             if (moveProvider != null)
                 moveProvider.enabled = false;
+            welcomeAudio.Stop();
+            backgroundAudio.Stop();
         }
         
         

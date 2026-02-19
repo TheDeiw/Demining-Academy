@@ -10,9 +10,15 @@ public class RemoteDetonator : MonoBehaviour
     [SerializeField] private ExecuteFinish gameFinishHandler;
         
     private string mineTag = "Mine";
+    private AudioSource clickSound;
+    void Start()
+    {
+        clickSound = GetComponent<AudioSource>();
+    }
     
     public void TryDetonate()
     {
+        clickSound.Play();
         if (!IsExplosionConnected)
         {
             Debug.Log("Detonation failed: No charge attached to a mine!");
@@ -44,6 +50,7 @@ public class RemoteDetonator : MonoBehaviour
 
     private void ExecuteExplosion()
     {
+        
         if (holeZone.AreAllMinesInHole())
         {
             foreach (GameObject mine in holeZone.minesInHole)
@@ -52,7 +59,7 @@ public class RemoteDetonator : MonoBehaviour
                 {
                     MineDangerousHandling mineHandler = mine.GetComponent<MineDangerousHandling>();
                     if (mineHandler != null)            
-                        mineHandler.Explode("Remote detonation triggered!");
+                        mineHandler.Explode("Win");
                 }
             }
             gameFinishHandler.FinishGame(1);

@@ -1,11 +1,21 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Zenject;
+using DeminingAcademy.Infrastructure.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    private ISceneLoaderService _sceneLoader;
+
+    // Injecting our global service into a local UI script
+    [Inject]
+    public void Construct(ISceneLoaderService sceneLoader)
+    {
+        _sceneLoader = sceneLoader;
+    }
     public void LoadLevel1()
     {
-        SceneManager.LoadScene("Main Level 1");
+        _sceneLoader.LoadSceneAsync("Main Level 1");
     }
     
     public void LoadLevel2()

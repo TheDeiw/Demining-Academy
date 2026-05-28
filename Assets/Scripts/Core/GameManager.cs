@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DeminingAcademy.Infrastructure.VRModeSwitch;
+using UnityEngine;
 using Zenject;
 
 namespace DeminingAcademy.Core

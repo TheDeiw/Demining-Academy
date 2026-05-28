@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="66dede21-a362-435d-9711-3f66fb4391ef" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Demining-Academy/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Features.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Features/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Features/UI/GlobalLoading.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Features/UI/GlobalLoading/ScreenFader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Features/UI/GlobalLoading/ScreenFader.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/ProjectInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/ProjectInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneManagement.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneManagement/ISceneLoaderService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneManagement/ISceneLoaderService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneManagement/SceneLoaderService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneManagement/SceneLoaderService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/VRModeSwitch.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RestartTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RestartTest.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.bezisidekick/.settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.bezisidekick/.user-settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Demining Academy/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Demining Academy/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Demining Academy/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Demining Academy/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Demining Academy/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Demining Academy/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Demining-Academy/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Demining-Academy/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Demining-Academy/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Demining-Academy/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Demining-Academy/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Demining-Academy/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/Hammer.fbm.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/Hammer.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/Hammer.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/Hammer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/Hammer.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/HammerLever.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/HammerLever.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/HammerLeverMetalic.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/HammerLeverMetalic.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/HammerLeverNM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/HammerLeverNM.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/HammerMelatic.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/HammerMelatic.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/HammerNM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/HammerNM.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/HammerPrefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/HammerPrefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/Materials/Hammer.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/Materials/Hammer.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/Materials/HammerLever.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hammer/Materials/HammerLever.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/Hoe.fbm.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/Hoe.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/Hoe.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/Hoe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/Hoe.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/HoeLever.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/HoeLever.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/HoeLeverNM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/HoeLeverNM.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/HoeNM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/HoeNM.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/HoePrefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/HoePrefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/Materials/2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/Materials/2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/Materials/Hoe.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/Materials/Hoe.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/Materials/Untitled.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/Materials/Untitled.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/Materials/xEfhrtCJLJ4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Hoe/Materials/xEfhrtCJLJ4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Saw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Saw/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Saw/Materials/Saw.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Saw/Materials/Saw.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Saw/Saw.fbm.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Saw/Saw.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Saw/Saw.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Saw/Saw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Saw/Saw.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Saw/SawMetalic.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Saw/SawMetalic.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Saw/SawNM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Saw/SawNM.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Saw/SawPrefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Saw/SawPrefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/Materials/Shovel.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/Materials/Shovel.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/Materials/ShovelLever.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/Materials/ShovelLever.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/Shovel.fbm.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/Shovel.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/Shovel.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/Shovel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/Shovel.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/ShovelLever.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/ShovelLever.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/ShovelLeverNM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/ShovelLeverNM.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/ShovelMetalic.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/ShovelMetalic.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/ShovelNM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/ShovelNM.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/ShovelPrefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Shovel/ShovelPrefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Sickle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Sickle/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Sickle/Materials/Sickle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Sickle/Materials/Sickle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Sickle/Sickle.fbm.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Sickle/Sickle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Sickle/Sickle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Sickle/Sickle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Sickle/Sickle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Sickle/SickleNM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Sickle/SickleNM.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Sickle/SicklePrefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Sickle/SicklePrefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Watering Can.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Watering Can/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Watering Can/Materials/No Name.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Watering Can/Materials/No Name.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Watering Can/Materials/Watering Can.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Watering Can/Materials/Watering Can.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Watering Can/Watering Can.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Watering Can/Watering Can.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Watering Can/Watering Can.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Watering Can/Watering Can.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Watering Can/Watering CanNM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Watering Can/Watering CanNM.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Watering Can/WateringCanPrefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GardenTools/Watering Can/WateringCanPrefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/GameSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/GameSceneInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/GameSceneInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/GameSceneInstaller.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/MenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/MenuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/VRLevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/VRLevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VRMode.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VRMode/IModeSwitcherService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/VRModeSwitch/IModeSwitcherService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VRMode/IModeSwitcherService.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/VRModeSwitch/IModeSwitcherService.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VRMode/ModeSwitcherService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/VRModeSwitch/ModeSwitcherService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VRMode/ModeSwitcherService.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/VRModeSwitch/ModeSwitcherService.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Mobile_RPAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Mobile_RPAsset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/OpenXRPackageSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/Settings/OpenXRPackageSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Recovery.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Recovery/0 (1).unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Recovery/0 (1).unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Recovery/0.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Recovery/0.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demining-Academy.slnx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Bezi.Editor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Bezi.Editor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Bezi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Bezi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/BeziSidekickInternal.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/BeziSidekickInternal.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/Microsoft.CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/Microsoft.CSharp.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/Microsoft.CodeAnalysis.CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/Microsoft.CodeAnalysis.CSharp.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/Microsoft.CodeAnalysis.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/Microsoft.CodeAnalysis.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/SharpToken.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/SharpToken.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/System.Collections.Immutable.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/System.Collections.Immutable.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/System.Reflection.Metadata.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/System.Reflection.Metadata.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/System.Runtime.CompilerServices.Unsafe.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/bezi-websocket-sharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Plugins/bezi-websocket-sharp.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Dark.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Dark/bezi-connected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Dark/bezi-connected.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Dark/bezi-connecting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Dark/bezi-connecting.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Dark/bezi-disconnected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Dark/bezi-disconnected.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Dark/bezi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Dark/bezi-icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Dark/bezi-paused.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Dark/bezi-paused.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Light.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Light/bezi-connected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Light/bezi-connected.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Light/bezi-connecting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Light/bezi-connecting.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Light/bezi-disconnected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Light/bezi-disconnected.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Light/bezi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Light/bezi-icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Light/bezi-paused.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/Editor/Resources/Icons/Light/bezi-paused.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/README.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.bezi.sidekick/package.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotChats">
+    <option name="panelChat">
+      <chat>
+        <option name="activeSessionId" value="c339b2bc-f613-4a86-954e-e8719d8f3f18" />
+        <option name="sessions">
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="c339b2bc-f613-4a86-954e-e8719d8f3f18" />
+            <option name="modeId" value="Ask" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="status" value="Completed" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="0b884de6-b0f8-4d41-b666-4f4e4e333d12" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="gpt-5-mini" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+        </option>
+        <option name="type" value="PANEL" />
+      </chat>
+    </option>
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_D:/University/Junia/Virtual_Realities/Demining-Academy" value="38J9yPoqFOtKO3lJvJkbPjmzMgl" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedModel">
+    <selectedModels>
+      <entry key="agent-panel" value="Auto" />
+      <entry key="chat-panel" value="Auto" />
+    </selectedModels>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="resolve" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;TheDeiw&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/TheDeiw/Demining-Academy.git&quot;,
+    &quot;accountId&quot;: &quot;4aa9de75-9737-4890-b0bf-701e52581e99&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Imported Assets/TerrainDemoScene_URP/Prefabs/Trees/Cypress/Textures/Bark_Extra.tif.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/New Terrain 1.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/New Terrain 1.asset.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Mine.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Mine.prefab.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Features/UI/GlobalLoading/ScreenFader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/ProjectInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Settings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/VRModeSwitch/IModeSwitcherService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/VRModeSwitch/ModeSwitcherService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level 1 Scripts/DisposalArea.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level 1 Scripts/RemoteDetonator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Previous Scripts/DestroyObjectsOnXRSelect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Previous Scripts/SceneFloorChange.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Previous Scripts/ShowMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Previous Scripts/VRLevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RestartTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Settings/XRI/Settings/Resources/InteractionLayerSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.polybrush@a5500a61e57c/Editor/Interface/BrushSettingsEditor.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="38J9yPoqFOtKO3lJvJkbPjmzMgl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Ask" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="LOCAL" />
+      </template>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Device#class com.jetbrains.rider.plugins.unity.run.devices.UnityEditorDeviceKind#com.jetbrains.rider.plugins.unity.run.devices.UnityDevicesProvider#Unity Attach To: Attach to&quot;: &quot;Unity Editor&quot;,
+    &quot;DeviceKind#com.jetbrains.rider.plugins.unity.run.devices.UnityDevicesProvider&quot;: &quot;Unity Editor&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Unity Attach To.Attach to.executor&quot;: &quot;Debug&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;do_not_show_Android_plugin_suggestion&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;refactoring/upgrade-infrostructure&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.build.unityPlugin&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Unity Attach To.Attach to">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.15f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath D:\University\Junia\Virtual_Realities\Demining-Academy -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\University\Junia\Virtual_Realities\Demining-Academy" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.15f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\University\Junia\Virtual_Realities\Demining-Academy -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\University\Junia\Virtual_Realities\Demining-Academy" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66dede21-a362-435d-9711-3f66fb4391ef" name="Changes" comment="" />
+      <created>1768507062489</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1768507062489</updated>
+      <workItem from="1768507065904" duration="397000" />
+      <workItem from="1768988601381" duration="813000" />
+      <workItem from="1769469584787" duration="47000" />
+      <workItem from="1769550891236" duration="18000" />
+      <workItem from="1769553159850" duration="15000" />
+      <workItem from="1769553402316" duration="611000" />
+      <workItem from="1769554412287" duration="3000" />
+      <workItem from="1770126298385" duration="6706000" />
+      <workItem from="1770152908782" duration="495000" />
+      <workItem from="1770158882678" duration="1690000" />
+      <workItem from="1770194391727" duration="2655000" />
+      <workItem from="1770770735988" duration="397000" />
+      <workItem from="1770997049982" duration="3280000" />
+      <workItem from="1771069061504" duration="9627000" />
+      <workItem from="1771114179016" duration="7000" />
+      <workItem from="1771114191376" duration="6000" />
+      <workItem from="1771114226368" duration="1459000" />
+      <workItem from="1771233044716" duration="2202000" />
+      <workItem from="1771251188780" duration="5569000" />
+      <workItem from="1771325168758" duration="5462000" />
+      <workItem from="1771337287735" duration="317000" />
+      <workItem from="1771337649250" duration="4046000" />
+      <workItem from="1771348554676" duration="2048000" />
+      <workItem from="1771375283883" duration="3714000" />
+      <workItem from="1779395325915" duration="1413000" />
+      <workItem from="1779707718130" duration="15353000" />
+      <workItem from="1779809769761" duration="1437000" />
+      <workItem from="1779811493090" duration="939000" />
+      <workItem from="1779812481498" duration="604000" />
+      <workItem from="1779813116793" duration="430000" />
+      <workItem from="1779814026944" duration="11291000" />
+      <workItem from="1779891434013" duration="6213000" />
+      <workItem from="1779906882635" duration="1005000" />
+      <workItem from="1779960321099" duration="3772000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix tags">
+      <option name="closed" value="true" />
+      <created>1771077251846</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1771077251846</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <option name="closed" value="true" />
+      <created>1771079090695</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1771079090695</updated>
+    </task>
+    <task id="LOCAL-00003">
+      <option name="closed" value="true" />
+      <created>1771331663551</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1771331663551</updated>
+    </task>
+    <task id="LOCAL-00004">
+      <option name="closed" value="true" />
+      <created>1771337849465</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1771337849465</updated>
+    </task>
+    <task id="LOCAL-00005">
+      <option name="closed" value="true" />
+      <created>1771339529987</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1771339529987</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="fix tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix tags" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

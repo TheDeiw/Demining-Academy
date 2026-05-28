@@ -41222,6 +41222,50 @@ MonoBehaviour:
   m_SkinMeshRef: {fileID: 0}
   m_OriginalMeshObject: {fileID: 944289460374817710, guid: 60069313336d66b4c96da44d32aead50, type: 3}
   m_Mode: 0
+--- !u!1 &176253079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 176253081}
+  - component: {fileID: 176253080}
+  m_Layer: 0
+  m_Name: Installer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &176253080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176253079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79456715a69e4b1cba694ac7869ff1cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeminingAcademy.Installers.GameSceneInstaller
+--- !u!4 &176253081
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176253079}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1967682313}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &176702543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -147602,6 +147646,23 @@ RectTransform:
   m_AnchoredPosition: {x: 2.038, y: 2.457}
   m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1369770955 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6254426981750912421, guid: 9afe582b86c757c44ae12c0eadabd5e1, type: 3}
+  m_PrefabInstance: {fileID: 6289570213850673498}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1369770958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369770955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae555abd36dc47d4bc802b43a7eb261b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeminingAcademy.RestartTest
 --- !u!1001 &1372375125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -193210,7 +193271,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Zenject::Zenject.SceneContext
   _scriptableObjectInstallers: []
-  _monoInstallers: []
+  _monoInstallers:
+  - {fileID: 176253080}
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:
@@ -193236,11 +193298,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967682311}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 176253081}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2043161132 stripped
@@ -193867,13 +193930,17 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6254426981750912421, guid: 9afe582b86c757c44ae12c0eadabd5e1, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 1369770958}
   m_SourcePrefab: {fileID: 100100000, guid: 9afe582b86c757c44ae12c0eadabd5e1, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 415648381}
+  - {fileID: 1967682313}
   - {fileID: 6289570213850673498}
   - {fileID: 1695409539}
   - {fileID: 2168430953644588746}
@@ -193902,4 +193969,3 @@ SceneRoots:
   - {fileID: 1085467035}
   - {fileID: 1651159846}
   - {fileID: 100645776}
-  - {fileID: 1967682313}

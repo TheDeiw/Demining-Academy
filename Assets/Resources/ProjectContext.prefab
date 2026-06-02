@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeminingAcademy.Infrastructure.Installers.ProjectInstaller
   _appSettings:
-    _startupMode: 2
+    _startupMode: 0
   _screenFader: {fileID: 1980343912723431474}
 --- !u!1001 &7302993289366269844
 PrefabInstance:

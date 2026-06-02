@@ -1,6 +1,11 @@
+using System;
+using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.ResourceManagement.ResourceProviders;
 using DeminingAcademy.Features.UI.GlobalLoading;
 
 namespace DeminingAcademy.Infrastructure.SceneManagement
@@ -10,12 +15,14 @@ namespace DeminingAcademy.Infrastructure.SceneManagement
         private readonly ScreenFader _fader;
         private bool _isLoading;
 
+        private AsyncOperationHandle<SceneInstance> _activeSceneHandle;
+        
         public SceneLoaderService(ScreenFader fader)
         {
             _fader = fader;
         }
 
-        public async UniTask LoadSceneAsync(string sceneName)
+        public async UniTask LoadSceneAsync(string sceneName, CancellationToken ct = default)
         {
             if (_isLoading)
             {
@@ -25,36 +32,66 @@ namespace DeminingAcademy.Infrastructure.SceneManagement
             _isLoading = true;
 
             Camera cam = Camera.main;
-            if (cam == null)
+            if (!cam)
             {
                 Debug.LogError("[SceneLoaderService] Camera.main is null");
                 _isLoading = false;
                 return;
             }
-
-            // 1. Fade out → чорний екран
+            
             _fader.AttachToCamera(cam);
             await _fader.FadeOutAsync();
+            
+            // Показуємо loading UI і запускаємо завантаження у фоні
+            //_fader.ShowLoadingUI(true);
 
-            // 3. Завантажуємо сцену у фоні
-            AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
-            op.allowSceneActivation = false;
-
-            while (op.progress < 0.9f)
-                await UniTask.Yield();
+            // Load scene from Addressables
+            var loadHandle = Addressables.LoadSceneAsync(
+                sceneName, 
+                LoadSceneMode.Single, 
+                activateOnLoad: false
+            );
+            
+            await loadHandle.Task;
+            if (loadHandle.Status != AsyncOperationStatus.Succeeded)
+            {
+                Debug.LogError($"[SceneLoaderService] CRITICAL: Addressables failed to load '{sceneName}'. Check Addressables Groups!");
+                await _fader.FadeInAsync();
+                _fader.Detach();
+                _isLoading = false;
+                return;
+            }
             
             _fader.Detach();
-            // 4. Активуємо сцену
-            op.allowSceneActivation = true;
-            await op.ToUniTask();
+            
+            var previousHandle = _activeSceneHandle;
 
-            await UniTask.WaitUntil(() => Camera.main != null);
+            await loadHandle.Result.ActivateAsync().ToUniTask(cancellationToken: ct);
+            _activeSceneHandle = loadHandle;
+            
+            if (previousHandle.IsValid())
+                await Addressables.UnloadSceneAsync(previousHandle);
+            
+            using var timeoutCts = CancellationTokenSource.CreateLinkedTokenSource(ct);
+            timeoutCts.CancelAfter(TimeSpan.FromSeconds(5f));
+
+            try
+            {
+                await UniTask.WaitUntil(() => Camera.main != null, cancellationToken: timeoutCts.Token);
+                await UniTask.DelayFrame(2, PlayerLoopTiming.Update, cancellationToken: timeoutCts.Token);
+            }
+            catch (OperationCanceledException)
+            {
+                Debug.LogError("[SceneLoaderService] Timeout: Camera.main not found after 5s. Does new scene have a MainCamera?");
+                _isLoading = false;
+                return;
+            }
             
             _fader.AttachToCamera(Camera.main);
             await _fader.FadeInAsync();
 
             _isLoading = false;
-            Debug.Log($"[SceneLoaderService] Loaded: {sceneName}");
+            Debug.Log($"[SceneLoaderService] Successfully loaded: {sceneName}");
         }
 
         public async UniTask ReloadCurrentSceneAsync()

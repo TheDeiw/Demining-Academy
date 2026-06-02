@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Duplicate Asset Isolation
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Duplicate Asset Isolation
+  m_GUID: 7851eb3744ab9884090ac9b10b196b5f
+  m_SerializeEntries:
+  - m_GUID: c348712bda248c246b8c49b3db54643f
+    m_Address: Assets/Imported Assets/XR Samples/XR Interaction Toolkit/3.2.2/Starter
+      Assets/XRI Default Input Actions.inputactions
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 4d0a0157f18a06d4fad4ced016310c61, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: e3b014360fff510458d1168cf26c8cd0, type: 2}
+    - {fileID: 11400000, guid: 4ee9a13cbbe44f141973ce72f74a3f27, type: 2}

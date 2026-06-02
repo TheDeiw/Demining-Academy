@@ -6,28 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
-    path: Assets/Scenes/Test Scenes/Test Scene.unity
-    guid: 5d39afcb968823a468b095105b5896f7
-  - enabled: 0
-    path: Assets/Scenes/level1.unity
-    guid: fb2180419c5e28a4ca197d4c6f060286
-  - enabled: 0
-    path: Assets/Scenes/beachMines.unity
-    guid: 66ab7010db608734a81fc755118e2d8e
-  - enabled: 1
     path: Assets/Scenes/Test Scenes/Kevin Tests/Lobby.unity
     guid: e8831bd6cfd1a764bb3d23e4400b23e4
-  - enabled: 1
-    path: Assets/Scenes/Main Level 1.unity
-    guid: 55b49a19f8d88684badb457c5f296680
-  - enabled: 1
-    path: Assets/Scenes/level2.unity
-    guid: b40bb8a3d35f5c54fb12143904741f0d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 7b0383df114a8c745b5a76336c0e2eb4, type: 2}
+    com.unity.addressableassets: {fileID: 11400000, guid: 5915ca1464725794f816bf2c7f2f3fc2, type: 2}
+    com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 11c41b251348aa242b06a6ba34ac90b8, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 81caeb195aaef134fbd4c3451d980c35, type: 2}

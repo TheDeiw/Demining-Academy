@@ -40,12 +40,11 @@ namespace DeminingAcademy.Infrastructure.SceneManagement
             }
             
             _fader.AttachToCamera(cam);
-            await _fader.FadeOutAsync();
             
-            // Показуємо loading UI і запускаємо завантаження у фоні
-            //_fader.ShowLoadingUI(true);
+            await _fader.FadeOutAsync();
 
-            // Load scene from Addressables
+            _fader.ShowSpinner(true);
+            
             var loadHandle = Addressables.LoadSceneAsync(
                 sceneName, 
                 LoadSceneMode.Single, 
@@ -53,22 +52,24 @@ namespace DeminingAcademy.Infrastructure.SceneManagement
             );
             
             await loadHandle.Task;
+            
             if (loadHandle.Status != AsyncOperationStatus.Succeeded)
             {
-                Debug.LogError($"[SceneLoaderService] CRITICAL: Addressables failed to load '{sceneName}'. Check Addressables Groups!");
+                Debug.LogError($"[SceneLoaderService] CRITICAL: Addressables failed to load '{sceneName}'.");
+                _fader.ShowSpinner(false);
                 await _fader.FadeInAsync();
                 _fader.Detach();
                 _isLoading = false;
                 return;
             }
-            
-            _fader.Detach();
-            
+
             var previousHandle = _activeSceneHandle;
 
+            // Активуємо нову сцену
             await loadHandle.Result.ActivateAsync().ToUniTask(cancellationToken: ct);
             _activeSceneHandle = loadHandle;
             
+            // Вивантажуємо стару сцену (стара Camera.main тут швидше за все знищиться)
             if (previousHandle.IsValid())
                 await Addressables.UnloadSceneAsync(previousHandle);
             
@@ -77,17 +78,21 @@ namespace DeminingAcademy.Infrastructure.SceneManagement
 
             try
             {
+                // Чекаємо поки нова камера не ініціалізується
                 await UniTask.WaitUntil(() => Camera.main != null, cancellationToken: timeoutCts.Token);
                 await UniTask.DelayFrame(2, PlayerLoopTiming.Update, cancellationToken: timeoutCts.Token);
             }
             catch (OperationCanceledException)
             {
-                Debug.LogError("[SceneLoaderService] Timeout: Camera.main not found after 5s. Does new scene have a MainCamera?");
+                Debug.LogError("[SceneLoaderService] Timeout: Camera.main not found after 5s in the new scene.");
+                _fader.ShowSpinner(false);
                 _isLoading = false;
                 return;
             }
             
             _fader.AttachToCamera(Camera.main);
+            
+            _fader.ShowSpinner(false);
             await _fader.FadeInAsync();
 
             _isLoading = false;

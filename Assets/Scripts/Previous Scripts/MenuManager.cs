@@ -20,12 +20,12 @@ public class MenuManager : MonoBehaviour
     
     public void LoadLevel2()
     {
-        SceneManager.LoadScene("level2");
+        _sceneLoader.LoadSceneAsync("level2");
     }
     
     public void LoadLobby()
     {
-        SceneManager.LoadScene("Scenes/Test Scenes/Kevin Tests/Lobby");
+        _sceneLoader.LoadSceneAsync("Lobby");
     }
     
     public void QuitGame()

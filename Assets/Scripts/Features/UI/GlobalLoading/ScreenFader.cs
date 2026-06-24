@@ -1,63 +1,72 @@
 using Cysharp.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.UI;
-using System.Threading;
 
 namespace DeminingAcademy.Features.UI.GlobalLoading
 {
     public class ScreenFader : MonoBehaviour
     {
-        [SerializeField] private Image _fadeImage;
+        [SerializeField] private MeshRenderer _fadeRenderer;
+        [SerializeField] private GameObject _loadingSpinner;
         [SerializeField] private float _fadeDuration = 0.5f;
 
-        private Canvas _canvas;
-        private Transform _originalParent;
+        private Material _fadeMaterial;
+        private Transform _targetCamera;
+        
+        // Захист від дублювання об'єкта при перезавантаженні сцени
+        private static ScreenFader _instance;
         
         private void Awake()
         {
-            _canvas = GetComponent<Canvas>();
-            // Для VR обов'язково World Space
-            if (_canvas != null)
-                _canvas.renderMode = RenderMode.WorldSpace;
+            // Якщо об'єкт вже існує з попередньої сцени — знищуємо зайвого клона
+            if (_instance != null && _instance != this)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            _instance = this;
+
+            // Відв'язуємо від батьківських об'єктів, інакше DontDestroyOnLoad видасть помилку
+            transform.SetParent(null);
+            DontDestroyOnLoad(gameObject);
+
+            if (_fadeRenderer != null)
+            {
+                // Клонуємо матеріал, щоб не змінювати файл ассету напряму
+                _fadeMaterial = _fadeRenderer.material;
+            }
 
             SetAlpha(0f);
-            
-            _originalParent = transform.parent;
+            ShowSpinner(false);
+        }
+
+        private void Update()
+        {
+            // Жорстко синхронізуємо позицію з камерою кожного кадру
+            if (_targetCamera != null)
+            {
+                transform.position = _targetCamera.position;
+                transform.rotation = _targetCamera.rotation;
+            }
         }
 
         public void AttachToCamera(Camera camera)
         {
-            if (camera == null)
-            {
-                Debug.LogWarning("[ScreenFader] Camera.main is null");
-                return;
-            }
-
-            transform.SetParent(camera.transform, false);
-
-            // Розміщуємо одразу за near clip plane
-            float distance = camera.nearClipPlane + 0.01f;
-            transform.localPosition = new Vector3(0f, 0f, distance);
-            transform.localRotation = Quaternion.identity;
-            transform.localScale = Vector3.one;
-
-            // Розраховуємо розмір canvas щоб точно перекрити весь FOV
-            float halfFov = camera.fieldOfView * Mathf.Deg2Rad * 0.5f;
-            float height = 2f * distance * Mathf.Tan(halfFov);
-            float width = height * camera.aspect;
-
-            var rect = GetComponent<RectTransform>();
-            if (rect != null)
-                rect.sizeDelta = new Vector2(width, height);
-
-            if (_canvas != null)
-                _canvas.worldCamera = camera;
+            if (camera == null) return;
+            
+            _targetCamera = camera.transform;
+            transform.position = _targetCamera.position;
+            transform.rotation = _targetCamera.rotation;
         }
-        
         
         public void Detach()
         {
-            transform.SetParent(_originalParent, false);
+            _targetCamera = null;
+        }
+
+        public void ShowSpinner(bool show)
+        {
+            if (_loadingSpinner != null)
+                _loadingSpinner.SetActive(show);
         }
 
         public async UniTask FadeOutAsync() => await AnimateAlpha(0f, 1f);
@@ -65,6 +74,8 @@ namespace DeminingAcademy.Features.UI.GlobalLoading
 
         private async UniTask AnimateAlpha(float from, float to)
         {
+            if (_fadeMaterial == null) return;
+
             float elapsed = 0f;
             while (elapsed < _fadeDuration)
             {
@@ -77,9 +88,23 @@ namespace DeminingAcademy.Features.UI.GlobalLoading
 
         private void SetAlpha(float alpha)
         {
-            Color c = _fadeImage.color;
-            c.a = alpha;
-            _fadeImage.color = c;
+            if (_fadeMaterial != null)
+            {
+                // Підтримка URP (використовує _BaseColor)
+                if (_fadeMaterial.HasProperty("_BaseColor"))
+                {
+                    Color c = _fadeMaterial.GetColor("_BaseColor");
+                    c.a = alpha;
+                    _fadeMaterial.SetColor("_BaseColor", c);
+                }
+                // Підтримка стандартних шейдерів Unity
+                else if (_fadeMaterial.HasProperty("_Color"))
+                {
+                    Color c = _fadeMaterial.color;
+                    c.a = alpha;
+                    _fadeMaterial.color = c;
+                }
+            }
         }
     }
 }

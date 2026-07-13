@@ -4760,10 +4760,70 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3461959412175272642, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3461959412175272642, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 585544347}
+    - target: {fileID: 3461959412175272642, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 3461959412175272642, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DeminingAcademy.Features.UI.VRMenuController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3724813068132609075, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
       propertyPath: m_Name
       value: MenuHandler
       objectReference: {fileID: 0}
+    - target: {fileID: 4767774116933624271, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767774116933624271, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 585544347}
+    - target: {fileID: 4767774116933624271, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767774116933624271, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DeminingAcademy.Features.UI.VRMenuController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767774116933624271, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: level2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6017140056144473058, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6017140056144473058, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 585544347}
+    - target: {fileID: 6017140056144473058, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6017140056144473058, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DeminingAcademy.Features.UI.VRMenuController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6017140056144473058, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Main Level 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6214885164021475384, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+      propertyPath: _headTransform
+      value: 
+      objectReference: {fileID: 1884488863}
     - target: {fileID: 7604233744805528234, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.91719
@@ -4809,6 +4869,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+--- !u!114 &585544347 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6214885164021475384, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
+  m_PrefabInstance: {fileID: 585544346}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f18411a0e72a4c44a66140eb6c21100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeminingAcademy.Features.UI.VRMenuController
 --- !u!1 &587859625 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4703460153160289051, guid: 9a2d7e8b01fd54c4dac5c4060770f411, type: 3}
@@ -10080,17 +10151,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2774220344278030320, guid: 9a2d7e8b01fd54c4dac5c4060770f411, type: 3}
   m_PrefabInstance: {fileID: 490456394}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1309084214 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8514343023266355292, guid: 5efcd7616236cc544963e8d16b6c8916, type: 3}
-  m_PrefabInstance: {fileID: 585544346}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4572270805224644892f89edaf5cfc87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MenuManager
 --- !u!1 &1309403846
 GameObject:
   m_ObjectHideFlags: 0
@@ -15265,7 +15325,7 @@ PrefabInstance:
     - target: {fileID: 6282646360373437341, guid: 9afe582b86c757c44ae12c0eadabd5e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1309084214}
+      objectReference: {fileID: 0}
     - target: {fileID: 6282646360373437341, guid: 9afe582b86c757c44ae12c0eadabd5e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: QuitGame
@@ -15273,7 +15333,7 @@ PrefabInstance:
     - target: {fileID: 6710644750315776070, guid: 9afe582b86c757c44ae12c0eadabd5e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1309084214}
+      objectReference: {fileID: 0}
     - target: {fileID: 6710644750315776070, guid: 9afe582b86c757c44ae12c0eadabd5e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadLevel2
@@ -15281,7 +15341,7 @@ PrefabInstance:
     - target: {fileID: 7771144629396162666, guid: 9afe582b86c757c44ae12c0eadabd5e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1309084214}
+      objectReference: {fileID: 0}
     - target: {fileID: 7771144629396162666, guid: 9afe582b86c757c44ae12c0eadabd5e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadLevel1
@@ -15297,6 +15357,11 @@ PrefabInstance:
       insertIndex: 1
       addedObject: {fileID: 380275632}
   m_SourcePrefab: {fileID: 100100000, guid: 9afe582b86c757c44ae12c0eadabd5e1, type: 3}
+--- !u!4 &1884488863 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2424131830032379397, guid: 9afe582b86c757c44ae12c0eadabd5e1, type: 3}
+  m_PrefabInstance: {fileID: 1884488862}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1912238067 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2774220344278030320, guid: 9a2d7e8b01fd54c4dac5c4060770f411, type: 3}

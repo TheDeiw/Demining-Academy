@@ -7,7 +7,7 @@ public class GrassSpawner : MonoBehaviour
     [Header("Main Settings")]
     public Transform playerTransform; // Drag your VR Camera or XR Origin here
     public GameObject grassPrefab; 
-    public Collider groundCollider; 
+    public Collider[] groundColliders; // Assign EVERY terrain/ground piece here
     public LayerMask groundLayer;
 
     [Header("Radius & Performance")]
@@ -16,32 +16,57 @@ public class GrassSpawner : MonoBehaviour
     public int maxChunksGeneratedPerFrame = 1; // Limit to 1 to prevent stutter
 
     [Header("Variation")]
-    public float minScale = 1.0f; 
-    public float maxScale = 1.5f; 
+    public float minScale = 1.0f;
+    public float maxScale = 1.5f;
 
     [Header("Obstacle Avoidance")]
-    public LayerMask obstacleLayer; 
-    public float obstacleCheckRadius = 0.5f; 
+    public LayerMask obstacleLayer;
+    public float obstacleCheckRadius = 0.5f;
 
     [Header("Density & LOD")]
-    public float density = 0.8f; 
-    [Range(0.01f, 0.9f)] public float lodTransition = 0.2f; 
-    public float lowQualityPercentage = 0.15f; 
+    public float density = 0.8f;
+    [Range(0.01f, 0.9f)] public float lodTransition = 0.2f;
+    public float lowQualityPercentage = 0.15f;
 
     // Internal tracking
     private Dictionary<Vector2Int, GameObject> activeChunks = new Dictionary<Vector2Int, GameObject>();
     private Vector2Int currentChunkCoord;
-    private Bounds mapBounds;
+    private Bounds[] groundBoundsArray;
 
     void Start()
     {
-        if (grassPrefab == null || groundCollider == null || playerTransform == null)
+        if (grassPrefab == null || groundColliders == null || groundColliders.Length == 0 || playerTransform == null)
         {
-            Debug.LogError("Missing Assignments! Assign Player, Prefab, and Ground.");
+            Debug.LogError("Missing Assignments! Assign Player, Prefab, and at least one Ground collider.");
             return;
         }
-        mapBounds = groundCollider.bounds;
+
+        groundBoundsArray = new Bounds[groundColliders.Length];
+        for (int i = 0; i < groundColliders.Length; i++)
+        {
+            groundBoundsArray[i] = groundColliders[i].bounds;
+        }
+
         StartCoroutine(UpdateChunksRoutine());
+    }
+
+    // Finds which terrain's bounds contain this XZ position (ignoring Y),
+    // and returns that terrain's bounds so we can use its correct height.
+    // Using "any match", not a merged box, so gaps between separate terrain
+    // pieces (e.g. islands) correctly stay empty instead of spawning chunks over nothing.
+    bool TryGetGroundBounds(float worldX, float worldZ, out Bounds bounds)
+    {
+        for (int i = 0; i < groundBoundsArray.Length; i++)
+        {
+            Bounds b = groundBoundsArray[i];
+            if (worldX >= b.min.x && worldX <= b.max.x && worldZ >= b.min.z && worldZ <= b.max.z)
+            {
+                bounds = b;
+                return true;
+            }
+        }
+        bounds = default;
+        return false;
     }
 
     IEnumerator UpdateChunksRoutine()
@@ -57,8 +82,10 @@ public class GrassSpawner : MonoBehaviour
             // 2. Only update if player moved to a new chunk (or at start)
             if (newPlayerChunk != currentChunkCoord || activeChunks.Count == 0)
             {
+                Debug.Log($"[Grass] Player entered chunk {newPlayerChunk} (was {currentChunkCoord}). Updating...");
                 currentChunkCoord = newPlayerChunk;
                 yield return UpdateVisibleChunks();
+                Debug.Log($"[Grass] Update finished. Active chunks now: {activeChunks.Count}");
             }
 
             // Check every 0.5 seconds to save CPU
@@ -102,21 +129,34 @@ public class GrassSpawner : MonoBehaviour
         int chunksProcessed = 0;
         foreach (var coord in chunksToCreate)
         {
-            // Calculate world position
-            Vector3 chunkCenter = new Vector3(coord.x * chunkSize, mapBounds.center.y, coord.y * chunkSize);
-
-            // Check if this chunk is actually inside the game map
-            if (mapBounds.Contains(new Vector3(chunkCenter.x, mapBounds.center.y, chunkCenter.z)))
+            // Calculate world position — find which terrain (if any) this XZ falls on,
+            // and use THAT terrain's height, since pieces may sit at different elevations
+            if (TryGetGroundBounds(coord.x * chunkSize, coord.y * chunkSize, out Bounds hitBounds))
             {
-                CreateChunk(coord, chunkCenter);
+                Vector3 chunkCenter = new Vector3(coord.x * chunkSize, hitBounds.center.y, coord.y * chunkSize);
+
+                try
+                {
+                    CreateChunk(coord, chunkCenter);
+                }
+                catch (System.Exception e)
+                {
+                    Debug.LogError($"[Grass] Failed to create chunk {coord}: {e.Message}\n{e.StackTrace}");
+                    // Make sure a failed chunk doesn't stay "reserved" forever
+                    if (activeChunks.ContainsKey(coord)) activeChunks.Remove(coord);
+                }
                 chunksProcessed++;
 
                 // Pause if we did too much work this frame
                 if (chunksProcessed >= maxChunksGeneratedPerFrame)
                 {
                     chunksProcessed = 0;
-                    yield return null; 
+                    yield return null;
                 }
+            }
+            else
+            {
+                Debug.Log($"[Grass] Chunk {coord} (world X={coord.x * chunkSize}, Z={coord.y * chunkSize}) is outside all assigned ground colliders, skipped.");
             }
         }
     }

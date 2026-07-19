@@ -15,8 +15,17 @@
   <component name="ChangeListManager">
     <list default="true" id="66dede21-a362-435d-9711-3f66fb4391ef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Demining-Academy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Demining-Academy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imported Assets/TerrainDemoScene_URP/Prefabs/Details/Grass_C.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imported Assets/TerrainDemoScene_URP/Prefabs/Details/Grass_C.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imported Assets/TerrainDemoScene_URP/Prefabs/Details/Materials/Grass_C.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imported Assets/TerrainDemoScene_URP/Prefabs/Details/Materials/Grass_C.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imported Assets/TerrainDemoScene_URP/Prefabs/Details/Textures/Grass_C_BaseColor.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imported Assets/TerrainDemoScene_URP/Prefabs/Details/Textures/Grass_C_BaseColor.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lobby Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lobby Level.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/GrassSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/GrassSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,7 +335,7 @@
       <workItem from="1783884248641" duration="5203000" />
       <workItem from="1783950490115" duration="3643000" />
       <workItem from="1784044896590" duration="55000" />
-      <workItem from="1784045202914" duration="3221000" />
+      <workItem from="1784045202914" duration="5607000" />
     </task>
     <task id="LOCAL-00001" summary="fix tags">
       <option name="closed" value="true" />

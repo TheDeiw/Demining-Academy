@@ -91,7 +91,7 @@ MonoBehaviour:
   - {fileID: -3716300281775166747}
   - {fileID: 65319957716629430}
   customLoaderName: 
-  m_renderMode: 0
+  m_renderMode: 1
   m_latencyOptimization: 0
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:

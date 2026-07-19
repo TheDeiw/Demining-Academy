@@ -23,10 +23,8 @@ public class GrassSpawner : MonoBehaviour
     public LayerMask obstacleLayer;
     public float obstacleCheckRadius = 0.5f;
 
-    [Header("Density & LOD")]
+    [Header("Density")]
     public float density = 0.8f;
-    [Range(0.01f, 0.9f)] public float lodTransition = 0.2f;
-    public float lowQualityPercentage = 0.15f;
 
     // Internal tracking
     private Dictionary<Vector2Int, GameObject> activeChunks = new Dictionary<Vector2Int, GameObject>();
@@ -165,13 +163,12 @@ public class GrassSpawner : MonoBehaviour
     {
         GameObject chunkRoot = new GameObject($"Chunk_{coord.x}_{coord.y}");
         chunkRoot.transform.SetParent(this.transform);
-        chunkRoot.transform.position = center; 
-        
+        chunkRoot.transform.position = center;
+
         // Add to dictionary immediately so we don't create it twice
         activeChunks.Add(coord, chunkRoot);
 
-        List<CombineInstance> highDetail = new List<CombineInstance>();
-        List<CombineInstance> lowDetail = new List<CombineInstance>();
+        List<CombineInstance> grassInstances = new List<CombineInstance>();
 
         int grassCount = Mathf.CeilToInt(chunkSize * chunkSize * density);
 
@@ -179,10 +176,10 @@ public class GrassSpawner : MonoBehaviour
         {
             Vector3 pos = new Vector3(
                 Random.Range(-chunkSize / 2, chunkSize / 2),
-                50f, 
+                50f,
                 Random.Range(-chunkSize / 2, chunkSize / 2)
             );
-            
+
             Vector3 worldRayStart = chunkRoot.transform.TransformPoint(pos);
 
             if (Physics.Raycast(worldRayStart, Vector3.down, out RaycastHit hit, 100f, groundLayer))
@@ -191,7 +188,7 @@ public class GrassSpawner : MonoBehaviour
 
                 Quaternion rot = Quaternion.FromToRotation(Vector3.up, hit.normal) * Quaternion.Euler(0, Random.Range(0, 360), 0);
                 Vector3 scale = Vector3.one * Random.Range(minScale, maxScale);
-                
+
                 Matrix4x4 baseMatrix = Matrix4x4.TRS(chunkRoot.transform.InverseTransformPoint(hit.point), rot, scale);
 
                 MeshFilter[] filters = grassPrefab.GetComponentsInChildren<MeshFilter>();
@@ -199,25 +196,16 @@ public class GrassSpawner : MonoBehaviour
                 {
                     CombineInstance ci = new CombineInstance();
                     ci.mesh = mf.sharedMesh;
-                    ci.transform = baseMatrix * mf.transform.localToWorldMatrix; 
+                    ci.transform = baseMatrix * mf.transform.localToWorldMatrix;
 
-                    highDetail.Add(ci);
-                    if (Random.value < lowQualityPercentage) lowDetail.Add(ci);
+                    grassInstances.Add(ci);
                 }
             }
         }
 
-        if (highDetail.Count > 0)
+        if (grassInstances.Count > 0)
         {
-            GameObject goHigh = CreateMeshObject("LOD0_High", chunkRoot.transform, highDetail);
-            GameObject goLow = CreateMeshObject("LOD1_Low", chunkRoot.transform, lowDetail);
-
-            LODGroup lodGroup = chunkRoot.AddComponent<LODGroup>();
-            LOD[] lods = new LOD[2];
-            lods[0] = new LOD(lodTransition, new Renderer[] { goHigh.GetComponent<Renderer>() });
-            lods[1] = new LOD(0.02f, new Renderer[] { goLow.GetComponent<Renderer>() });
-            lodGroup.SetLODs(lods);
-            lodGroup.RecalculateBounds();
+            CreateMeshObject("Grass", chunkRoot.transform, grassInstances);
         }
     }
 

@@ -14,18 +14,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66dede21-a362-435d-9711-3f66fb4391ef" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Demining-Academy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Demining-Academy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imported Assets/TerrainDemoScene_URP/Prefabs/Details/Grass_C.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imported Assets/TerrainDemoScene_URP/Prefabs/Details/Grass_C.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imported Assets/TerrainDemoScene_URP/Prefabs/Details/Materials/Grass_C.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imported Assets/TerrainDemoScene_URP/Prefabs/Details/Materials/Grass_C.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imported Assets/TerrainDemoScene_URP/Prefabs/Details/Textures/Grass_C_BaseColor.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imported Assets/TerrainDemoScene_URP/Prefabs/Details/Textures/Grass_C_BaseColor.tif.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Features/Soil (2 level).meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lobby Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lobby Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Level 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level 1 Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level 1 Scripts/DisposalArea.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level 1 Scripts/DisposalArea.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level 1 Scripts/RemoteDetonator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level 1 Scripts/RemoteDetonator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/AnimatedHands.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/AnimatedHands.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/DestroyObjectsOnXRSelect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/DestroyObjectsOnXRSelect.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/FlagSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/Soil (2 level)/FlagSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/FlagSpawner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/Soil (2 level)/FlagSpawner.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/GrassSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/GrassSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/LookAtCamera.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/LookAtCamera.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/ObjectRespawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/Soil (2 level)/ObjectRespawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/ObjectRespawner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/Soil (2 level)/ObjectRespawner.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/PlayerBoundGuard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/Soil (2 level)/PlayerBoundGuard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/PlayerBoundGuard.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/Soil (2 level)/PlayerBoundGuard.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/SceneFloorChange.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/SceneFloorChange.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/ShowMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/ShowMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/ShowTextWhileGrabi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/ShowTextWhileGrabi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/SoilRemoval.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/Soil (2 level)/SoilRemoval.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Previous Scripts/SoilRemoval.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/Soil (2 level)/SoilRemoval.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,11 +120,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Settings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/VRModeSwitch/IModeSwitcherService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/VRModeSwitch/ModeSwitcherService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level 1 Scripts/DisposalArea.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level 1 Scripts/RemoteDetonator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Previous Scripts/DestroyObjectsOnXRSelect.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Previous Scripts/SceneFloorChange.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Previous Scripts/ShowMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RestartTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Settings/XRI/Settings/Resources/InteractionLayerSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" root0="FORCE_HIGHLIGHTING" />
@@ -336,6 +349,7 @@
       <workItem from="1783950490115" duration="3643000" />
       <workItem from="1784044896590" duration="55000" />
       <workItem from="1784045202914" duration="5607000" />
+      <workItem from="1784473648058" duration="411000" />
     </task>
     <task id="LOCAL-00001" summary="fix tags">
       <option name="closed" value="true" />

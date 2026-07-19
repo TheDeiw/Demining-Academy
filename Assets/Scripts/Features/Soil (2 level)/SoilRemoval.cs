@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class SoilRemoval : MonoBehaviour
 {
-    [Header("–ßπ˚…Ë÷√")]
     public GameObject dustParticlePrefab; // Prefab for dust particles when soil is removed
     public float health = 100f;           // Health of the soil layer, decreases as it's removed
     public float removalSpeed = 20f;      // Speed at which soil is removed

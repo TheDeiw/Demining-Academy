@@ -170,6 +170,10 @@ public class GrassSpawner : MonoBehaviour
 
         List<CombineInstance> grassInstances = new List<CombineInstance>();
 
+        // Fetched once per chunk instead of once per blade — avoids hundreds of
+        // redundant GetComponentsInChildren allocations per chunk.
+        MeshFilter[] filters = grassPrefab.GetComponentsInChildren<MeshFilter>();
+
         int grassCount = Mathf.CeilToInt(chunkSize * chunkSize * density);
 
         for (int i = 0; i < grassCount; i++)
@@ -191,7 +195,6 @@ public class GrassSpawner : MonoBehaviour
 
                 Matrix4x4 baseMatrix = Matrix4x4.TRS(chunkRoot.transform.InverseTransformPoint(hit.point), rot, scale);
 
-                MeshFilter[] filters = grassPrefab.GetComponentsInChildren<MeshFilter>();
                 foreach (MeshFilter mf in filters)
                 {
                     CombineInstance ci = new CombineInstance();

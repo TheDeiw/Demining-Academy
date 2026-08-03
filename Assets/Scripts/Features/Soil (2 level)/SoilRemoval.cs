@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class SoilRemoval : MonoBehaviour
 {
-    public GameObject dustParticlePrefab; // Prefab for dust particles when soil is removed
-    public float health = 100f;           // Health of the soil layer, decreases as it's removed
-    public float removalSpeed = 20f;      // Speed at which soil is removed
+    [SerializeField] private GameObject dustParticlePrefab; // Prefab for dust particles when soil is removed
+    [SerializeField] private float health = 100f;           // Health of the soil layer, decreases as it's removed
+    [SerializeField] private float removalSpeed = 20f;      // Speed at which soil is removed
+    [SerializeField] private GameObject confetti;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -19,19 +21,19 @@ public class SoilRemoval : MonoBehaviour
     {
         health -= removalSpeed;
 
-        // Instantiate dust particles at the soil's position
         if (dustParticlePrefab != null)
         {
             Instantiate(dustParticlePrefab, transform.position, Quaternion.identity);
         }
 
-        // Optionally, you can also scale down the soil object to visually represent the removal
         transform.localScale *= 0.8f;
 
-        // Check if the soil layer is completely removed
         if (health <= 0)
         {
-            Debug.Log("Cleaned!");
+            if (confetti != null)
+            {
+                Instantiate(confetti, transform.position, Quaternion.identity);
+            }
 
             MineManager manager = Object.FindFirstObjectByType<MineManager>();
             if (manager != null)

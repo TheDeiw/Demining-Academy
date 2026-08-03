@@ -11,10 +11,10 @@ ScriptedImporter:
   editorImportSettings:
     generateSecondaryUVSet: 0
   importSettings:
-    nodeNameMethod: 1
+    nodeNameMethod: 0
     animationMethod: 2
     generateMipMaps: 1
-    texturesReadable: 0
+    texturesReadable: 1
     defaultMinFilterMode: 9729
     defaultMagFilterMode: 9729
     anisotropicFilterLevel: 1

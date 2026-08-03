@@ -31,6 +31,7 @@ public class RemoteDetonator : MonoBehaviour
         if (minesInHole < totalMinesInScene)
         {
             Debug.Log("WARNING: Not all mines are in the disposal pit! The road is still blocked.");
+            return;
         }
 
         ExecuteExplosion();

@@ -1,0 +1,15 @@
+Effective Date: July 2026
+
+TheDeiw's Games ("we", "us", or "our") built the Demining Academy VR application (the "App") as an educational and simulation game for virtual reality headsets. This service is provided by TheDeiw's Games at no cost and is intended for use "as is".
+
+This page is used to inform users regarding our policies with the collection, use, and disclosure of Personal Information if anyone decides to use our App.
+
+1. **Information Collection and Use:** We respect your privacy. Demining Academy VR does not actively collect, store, or transmit any personally identifiable information (such as your name, email address, physical location, or contact details) to our servers. All gameplay processing happens locally on your VR device.
+2. **Children’s Privacy:** Demining Academy VR is not directed at children under the age of 13. We do not knowingly collect personally identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our records (if any such data were ever inadvertently collected). If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to take the necessary actions.
+3. **Third-Party Services:** While our App does not directly collect personal data, it is built using third-party tools and distributed through third-party platforms that may collect information used to identify you, provide analytics, or ensure the App functions correctly.
+
+Please refer to the privacy policies of these third-party service providers:
+
+- Meta / Oculus: The App is distributed via the Meta Quest platform. Meta may collect telemetry, crash reports, and usage data as part of their standard platform operations.
+- Unity: The App is developed using the Unity Engine, which may collect basic device information (like IP address, device type, and operating system) for hardware diagnostics and engine analytics.
+

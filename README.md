@@ -2,7 +2,10 @@
 
 **Virtual Reality Simulation for Mine Awareness and the Demining Process.**
 
-<img width="499" height="236" alt="DeminingAcademyLogo" src="https://github.com/user-attachments/assets/1510da40-e670-4ab5-8633-37087b331b23" />
+- Download simulator on [Meta Store](https://www.meta.com/experiences/demining-academy/1236651609526849/)
+- View game on [TheDeiw's Games](https://thedeiw.github.io/TheDeiwGames/pages/DeminingAcademy.html)
+
+<img width="2560" height="1440" alt="DeminingAcademy" src="https://github.com/user-attachments/assets/1aa3533e-bcc0-478d-a51c-6529cd6886ea" />
 
 Demining Academy VR aims to bridge the gap between theoretical knowledge and reality, providing a high-stakes environment with zero physical risk. This project was created to transition users from passive observers to active participants, helping them master 1:1 scale ordnance identification and real-world protocols.
 
